@@ -16,8 +16,8 @@ int main(){			//Inicia función principal
 	/*
 	Mensaje que describe qué hace el programa
 	*/
-	cout << "Este programa pide una cadena de caracteres y luego la muestra ;
-	cout <<"en pantalla" << endl << endl;
+	cout << "Este programa pide una cadena de caracteres y luego la muestra" ;
+	cout << "en pantalla" << endl << endl;
 	/*
 	Muestra en pantalla la cadena "Escribe algo" y luego un fin de 
 	línea, para que el cursor salte a la siguiente línea.
