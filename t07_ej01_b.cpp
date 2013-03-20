@@ -31,5 +31,7 @@ int main(){
 	
 	cout << "El promedio de las calificaciones fue de " << promedio << endl;
 
+	cin.get();
+	
 	return 0;
 }

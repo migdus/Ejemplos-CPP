@@ -34,6 +34,20 @@ int main(){
 	caracter de terminación que es el punto y coma (;).
 	*/
 	cout << "Hola Mundo!";
+	
+	/*
+		El siguiente comando hace que el programa quede a la espera para que
+	el usuario oprima una tecla y terminar con la ejecución del mismo.
+	Si no se coloca es posible que se abra e inmediatamente se cierre una ventana
+	de consola y nunca muestre la ejecución del programa.
+	Aunque en algunas implementaciones esto no es necesario,  es importante
+	colocarlo para que no haya problemas. 
+	Si en su IDE esto aún no hace que la ventana del programa quede a la espera,
+	reemplace la línea por (debe probarlo):
+	getchar();
+	*/
+	cin.get();
+	
 	//Devuelve un número indicando que el programa terminó correctamente.
 	return 0; 
 }

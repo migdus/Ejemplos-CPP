@@ -21,8 +21,10 @@ int main(){
 	
 	cout << "Primer numero? ";	//Solicita el primer número
 	cin >> a;					//Captura el primer número por teclado
+	
 	cout << "Segundo numero? ";	//Solicita el segundo número
 	cin >> b;					//Captura el segundo número por teclado
+	
 	c = a + b;				//Realiza la operación y la almacena en una variable
 	
 	//Imprime la operación. 
@@ -34,5 +36,8 @@ int main(){
 	cout << endl;
 	//Las impresiones en pantalla se pueden hacer también en una sola línea
 	cout << a << " + " << b << " = " << c << endl;
+	
+	cin.get();
+	
 	return 0;
 }

@@ -47,6 +47,7 @@ int main(){
 		if(numero > numero_mayor)		
 			//Si es mayor, se guarda como el mayor de los ingresados
 			numero_mayor = numero;		
+		
 		// Revisar si este número es menor al número más pequeño guardado
 		if(numero < numero_menor){
 			//Si es menor, se guarda como el menor de los ingresados
@@ -54,7 +55,8 @@ int main(){
 		}
 		/*
 		Operador unario, que incrementa en 1 del contador.
-		Equivalente a: contador = contador + 1;
+		Equivalente a: 
+		contador = contador + 1;
 		*/
 		contador++;						
 	}
@@ -62,6 +64,8 @@ int main(){
 	//Mostrar los números en pantalla
 	cout << "El numero mayor entre los ingresados es: " << numero_mayor << endl;
 	cout << "El numero menor entre los ingresados es: " << numero_menor << endl;
+	
+	cin.get();
 	
 	return 0;
 }

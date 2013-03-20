@@ -55,6 +55,7 @@ int main(){
 			break;										//termina el bloque que se ejecuta si no coinciden las opciones anteriores
 	}
 	
-
+	cin.get();
+	
 	return 0;
 }

@@ -27,5 +27,8 @@ int main(){
 	
 	if(numero%2 != 0)
 		cout << "El numero es impar";
+	
+	cin.get();
+	
 	return 0;
 }
