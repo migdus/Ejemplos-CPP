@@ -36,23 +36,23 @@ int main(){
 			cout << "Martes"<< endl;  //Imprime "Martes"
 			break;										//Termina el bloque que se ejecuta para el caso 2
 		case 3: 										//Si la variable tiene valor 3
-		cout << "Miercoles"<< endl;	//Imprime "Miércoles"
-		break;										//Termina el bloque que se ejecuta para el caso 3
+			cout << "Miercoles"<< endl;	//Imprime "Miércoles"
+			break;										//Termina el bloque que se ejecuta para el caso 3
 		case 4: 										//Si la variable tiene valor 4
-		cout << "Jueves"<< endl;	//Imprime "Jueves"
-		break;										//Termina el bloque que se ejecuta para el caso 4
+			cout << "Jueves"<< endl;	//Imprime "Jueves"
+			break;										//Termina el bloque que se ejecuta para el caso 4
 		case 5: 										//Si la variable tiene valor 5
-		cout << "Viernes"<< endl;	//Imprime "Viernes"
-		break;										//Termina el bloque que se ejecuta para el caso 5
+			cout << "Viernes"<< endl;	//Imprime "Viernes"
+			break;										//Termina el bloque que se ejecuta para el caso 5
 		case 6: 										//Si la variable tiene valor 6
-		cout << "Sabado"<< endl;	//Imprime "Sabado"
-		break;										//Termina el bloque que se ejecuta para el caso 6
+			cout << "Sabado"<< endl;	//Imprime "Sabado"
+			break;										//Termina el bloque que se ejecuta para el caso 6
 		case 7: 										//Si la variable tiene valor 7
-		cout << "Domingo"<< endl;	//Imprime "Domingo"
-		break;										//Termina el bloque que se ejecuta para el caso 7
+			cout << "Domingo"<< endl;	//Imprime "Domingo"
+			break;										//Termina el bloque que se ejecuta para el caso 7
 		default: 										//Si  el usuario escribe otro número
-		cout << "Error"<< endl;		//Imprime "Error"
-		break;										//termina el bloque que se ejecuta si no coinciden las opciones anteriores
+			cout << "No existe un dia asociado a ese numero"<< endl;		//Imprime "Error"
+			break;										//termina el bloque que se ejecuta si no coinciden las opciones anteriores
 	}
 	
 

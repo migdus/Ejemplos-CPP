@@ -38,27 +38,25 @@ int main(){
 	cout << "Cuantos numeros desea ingresar? ";
 	cin >> cantidad_numeros;
 	
-	
-	while(contador < cantidad_numeros){	/*Mientras el contador sea menor a la 
-										cantidad de números*/
+	//Mientras el contador sea menor a la cantidad de números
+	while(contador < cantidad_numeros){	
 		cout << "Numero? ";				//Pedir un número
 		cin >> numero;
 		
-		if(numero > numero_mayor)		/*Revisar si este número es mayor al 
-										número más grande guardado*/
-			numero_mayor = numero;		/*Si es mayor, se guarda como el mayor 
-										de los ingresados*/
-		
-		if(numero < numero_menor){		/*Revisar si este número es más pequeño 
-										que el menor guardado*/
-			numero_menor = numero;		/*Si es menor, se guarda como el menor 
-										de los ingresados*/
+		// Revisar si este número es mayor al número más grande guardado
+		if(numero > numero_mayor)		
+			//Si es mayor, se guarda como el mayor de los ingresados
+			numero_mayor = numero;		
+		// Revisar si este número es menor al número más pequeño guardado
+		if(numero < numero_menor){
+			//Si es menor, se guarda como el menor de los ingresados
+			numero_menor = numero;		
 		}
-		
-		contador++;						/*Operador unario, que incrementa en 1 
-										del contador.
-										Equivalente a: contador = contador + 1;
-										*/
+		/*
+		Operador unario, que incrementa en 1 del contador.
+		Equivalente a: contador = contador + 1;
+		*/
+		contador++;						
 	}
 	
 	//Mostrar los números en pantalla
