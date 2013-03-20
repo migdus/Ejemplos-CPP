@@ -20,9 +20,11 @@ int main(){
 	cout<<"1 y el 200 de forma intercalada, uno del principio y uno del final.";
 	cout<<" Ejemplo: 1,199,3,197,5,195,..."<<endl<<endl;
 	
-	//Ciclo while. La condición es que el contador ascendente sea
-	//Menor o igual a 200. También se puede colocar que el contador descendente
-	//sea mayor o igual a 1, o ambas.
+	/*
+	Ciclo while. La condición es que el contador ascendente sea
+	Menor o igual a 200. También se puede colocar que el contador descendente
+	sea mayor o igual a 1, o ambas.
+	*/
 	
 	while(cont_asc <=200){
 		//Condición para el contador ascendente.
@@ -36,9 +38,11 @@ int main(){
 			cout << cont_desc <<" ";
 		}
 		cont_asc=cont_asc+1;	//Incremento en uno
-		cont_desc--;			/*Operador unario de decremento en uno.
-								Equivalente a: cont_desc = cont_desc - 1.*/
+		//Operador unario de decremento en uno. Equivalente a: cont_desc = cont_desc - 1.
+		cont_desc--;			
 	}
 
+	cin.get();
+	
 	return 0;
 }

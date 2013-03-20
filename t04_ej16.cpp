@@ -37,28 +37,34 @@ int main(){
 	Esta función de comparación retorna 0 si son iguales. 
 	Por eso en el if se realiza la comparación. Si lo que retorna es igual a 0, 
 	entonces son iguales.
+	Este ejemplo utiliza estructuras selectivas anidadas (una dentro de otra).
 	*/
-	if(passw_digitado.compare(passw_control) == 0){ //primera comparación
+	if(passw_digitado.compare(passw_control) == 0){ //1er if
 		cout << "Acceso concedido"<<endl;
-	}else{
+	}//cierra 1er if
+	else{ //1er else
 		cout << "Error en el password. Lleva 1 intento fallido." << endl;
 		//Segundo intento de digitar el password
 		cout << "Password? ";
 		cin >> passw_digitado;
-		if(passw_digitado.compare(passw_control) == 0){ //Segunda comparación
+		if(passw_digitado.compare(passw_control) == 0){ //2do if
 			cout << "Acceso concedido"<<endl;
-		}else{
+		} //cierra 2do if
+		else{ //2do else
 			cout << "Error en el password. Lleva 2 intento fallido." << endl;
 			//Tercer intento de digitar el password
 			cout << "Password? ";
 			cin >> passw_digitado;
-			if(passw_digitado.compare(passw_control) == 0){ //Tercera comparación
+			if(passw_digitado.compare(passw_control) == 0){ //3er if
 				cout << "Acceso concedido"<<endl;
-			}else{
+			} //cierra 3er if
+			else{ //3er else
 				cout << "Ha errado 3 veces. Acceso denegado." << endl;
-			} //Cierra el tercer else
-		} //Cierra el segundo else
-	} //Cierra el primer else
+			} //Cierra el 3er else
+		} //Cierra el 2o else
+	} //Cierra el 1er else
 
+	cin.get();
+	
 	return 0;
 }

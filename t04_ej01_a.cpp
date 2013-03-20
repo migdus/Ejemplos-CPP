@@ -28,9 +28,12 @@ int main(){
 		La condición para que ejecute el código dentro de la estructura es
 		que el número sea menor que cero.
 	*/
-	if(numero<0){						//Abre la estructura
-		cout << "El numero es negativo";/*Imprime un mensaje si el número es 
-										negativo*/
+	if(numero<0){			//Abre la estructura
+		//Imprime un mensaje si el número es negativo
+		cout << "El numero es negativo";
 	}									//Cierra la estructura
+	
+	cin.get();
+	
 	return 0;
 }
