@@ -14,7 +14,6 @@ using namespace std;
 
 int main(){
 	
-	float promedio = 0; //Variable acumuladora
 	int tam = 0; //Tamaño del arreglo
 	
 	/*
@@ -23,7 +22,7 @@ int main(){
 	*/
 	int num_mayor = INT_MIN; 
 	
-	int frec_alta = -1; //Número con frecuencia más alta
+	int frec_alta = INT_MIN; //Número con frecuencia más alta
 	
 	cout<<"Cuantos numeros desea ingresar? ";
 	cin>>tam;
