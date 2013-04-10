@@ -5,18 +5,19 @@ using namespace std;
 
 int main(){
 	
-	int tam = 10;
+	
+	float promedio = 0; //Variable acumuladora
+	int tam = 0; //Tamaño del arreglo
 	
 	cout<<"Cuantos numeros desea ingresar? ";
 	cin>>tam;
 	
-	//Declaración del arreglo de tipo entero
-	int a[tam];
-	float promedio = 0; //Variable acumuladora
+	int a[tam]; //Declaración del arreglo de tipo entero
+	
 
 	//Captura de los valores
 	for(int i=0;i < tam; i++){
-		cout<<"Ingrese el número "<< i+1 <<": ";
+		cout<<"Ingrese el numero "<< i+1 <<": ";
 		cin>>a[i]; //Los valores se almacenan directamente en una posición del arreglo
 	}
 	
@@ -30,7 +31,7 @@ int main(){
 		
 		/*
 		Acumulador para calcular el promedio.
-		Se aprovecha la iteración en la que se muestran los números para acumular
+		Se aprovecha la iteración en la que se muestran los numeros para acumular
 		los valores de cada una de las posiciones del arreglo en una variable.
 		
 		El operador += equivale a escribir: 
@@ -44,7 +45,7 @@ int main(){
 	imprime.
 	*/
 	
-	cout<<"El promedio de los números fue: "<<promedio/tam<<endl;
+	cout<<"El promedio de los numeros fue: "<<promedio/tam<<endl;
 	
 	cin.get();
 	
