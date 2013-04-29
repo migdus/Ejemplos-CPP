@@ -12,9 +12,10 @@
 
 using namespace std;
 
-int main(){
-	int filas=0; //Almacena el número de filas de la matriz
-	int columnas=0; //Almacena el número de columnas de la matriz
+int main()
+{
+	int filas = 0; //Almacena el número de filas de la matriz
+	int columnas = 0; //Almacena el número de columnas de la matriz
 
 	cout << "Cuantas filas debe tener la matriz? ";
 	cin >> filas;
@@ -26,28 +27,30 @@ int main(){
 
 	//Inicialización de la matriz, con los valores que el usuario escriba
 
-	for(int i=0;i<filas;i++)
-		for(int j=0;j<columnas;j++){
-			cout<<"Valor para m["<<i<<"]["<<j<<"] ? ";
-			cin>>m[i][j];
+	for(int i = 0; i < filas; i++)
+		for(int j = 0; j < columnas; j++)
+		{
+			cout << "Valor para m[" << i << "][" << j << "] ? ";
+			cin >> m[i][j];
 		}
-		
+
 
 //Mostrar los resultados tabulados
-cout << "Valores ingresados para la matriz"<<endl;
-cout<< "Fila" << setw(15) << "Columna" << setw(15) << "Valor"<<endl;
-cout<<"____________________________________"<<endl;
-	for(int i=0;i<filas;i++)
-		for(int j=0;j<columnas;j++)
-			cout<<i<<setw(15)<<j<<setw(15)<<m[i][j]<<endl;
+	cout << "Valores ingresados para la matriz" << endl;
+	cout << "Fila" << setw(15) << "Columna" << setw(15) << "Valor" << endl;
+	cout << "____________________________________" << endl;
+	for(int i = 0; i < filas; i++)
+		for(int j = 0; j < columnas; j++)
+			cout << i << setw(15) << j << setw(15) << m[i][j] << endl;
 
 	//Mostrar el arreglo en formato de matriz
-	cout<<endl<<endl<<"Arreglo en forma de matriz"<<setw(5)<<endl;
-	for(int i=0;i<filas;i++){
-		for(int j=0;j<columnas;j++)
-			cout<<m[i][j]<<setw(5);
-		cout<<endl;
+	cout << endl << endl << "Arreglo en forma de matriz" << setw(5) << endl;
+	for(int i = 0; i < filas; i++)
+	{
+		for(int j = 0; j < columnas; j++)
+			cout << m[i][j] << setw(5);
+		cout << endl;
 	}
 
-return 0;
+	return 0;
 }
