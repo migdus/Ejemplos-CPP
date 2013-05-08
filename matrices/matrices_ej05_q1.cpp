@@ -26,7 +26,7 @@ int main()
 
 	int m[filas][columnas]; //Declaración de la matriz
 
-//Captura de los elementos de la matriz
+	//Captura de los elementos de la matriz
 	for(int i = 0; i < filas; i++)
 		for(int j = 0; j < columnas; j++)
 		{
