@@ -76,8 +76,8 @@ int main()
 			cout << i << setw(15) << j << setw(15) << m[i][j] << endl;
 
 
-	//Mostrar el arreglo en formato de matriz
-	cout << endl << endl << "Arreglo en forma de matriz" << setw(5) << endl;
+	//Mostrar la matriz
+	cout << endl << endl << "Matriz" << setw(5) << endl;
 	for(int i = 0; i < filas; i++)
 	{
 		for(int j = 0; j < columnas; j++)
