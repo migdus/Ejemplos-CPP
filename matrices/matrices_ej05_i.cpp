@@ -64,9 +64,9 @@ int main() {
                 /*Siguiente línea equivalente a:
                 * if(valor == true)
                 *    valor = false;
-                  * else
-                  *    valor = true;
-                              */
+                * else
+                *    valor = true;
+                */
                 valor = (valor == true) ? false : true;
             }
         //Se decrementa el índice de la fila que se está recorriendo
@@ -86,7 +86,8 @@ int main() {
     while(fila_actual >= 0);
 
     //Mostrar la matriz
-    cout << endl << endl << "Matriz Resultado: 1(true); 0(false)" << setw(5) << endl;
+    cout << endl << endl << "Matriz Resultado: 1(true); 0(false)" << setw(
+             5) << endl;
     for(int i = 0; i < filas; i++) {
         for(int j = 0; j < columnas; j++)
             cout << m[i][j] << setw(5);

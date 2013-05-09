@@ -3,7 +3,8 @@
  */
 
 /*
- * Este programa captura una matriz de números y los ordena de forma descendente.
+ * Este programa captura una matriz de números y los ordena de forma
+ * descendente.
  */
 
 #include <iostream>
@@ -46,20 +47,21 @@ int main() {
      */
     bool organizada;
     do { //Empieza Hacer Mientras
-        organizada = true; //De entrada se asume que la matriz está organizada
+        //De entrada se asume que la matriz está organizada
+        organizada = true;
         for(int i = 0; i < filas; i++) {
             for(int j = 0; j < columnas; j++) {
                 /*
-                 * Si nos encontramos dentro del límite de las columnas...
-                 * Observe que se partió la condicional if en dos subcondicionales,
-                 * para que exista una ejecución alternativa en el caso de que no exista
-                 * una columna válida siguiente.
-                 */
+                * Si nos encontramos dentro del límite de las columnas...
+                  * Observe que se partió la condicional if en dos
+                  * subcondicionales, para que exista una ejecución alternativa
+                  * en el caso de que no exista una columna válida siguiente.
+                              */
 
                 if(j + 1 < columnas) {
                     /*
-                     * Si la posición siguiente a la actual tiene un número mayor al que
-                     * estamos evaluando
+                    * Si la posición siguiente a la actual tiene un número
+                    * mayor al que estamos evaluando
                      */
                     if(m[i][j + 1] > m[i][j]) {
                         //Se realiza el intercambio del contenido
@@ -67,20 +69,23 @@ int main() {
                         m[i][j + 1] = m[i][j];
                         m[i][j] = aux;
                         /*
-                         * En caso de realizarse al menos un intercambio de valores en la matriz,
-                         * se debe asignar el valor de falso a la bandera. Así, cuando se recorra
-                         * toda la matriz y no se requieran cambios de posiciones, la bandera seguirá
-                         * siendo verdadera y se terminará la ejecución del código dentro del Do-While
-                         */
-                        //Se asigna falso a la organizadaera, pues hemos hecho un intercambio
+                        * En caso de realizarse al menos un intercambio de
+                                 * valores en la matriz, se debe asignar el valor de
+                                 * falso a la bandera. Así, cuando se recorra toda la
+                                 * matriz y no se requieran cambios de posiciones, la
+                                 * bandera seguirá siendo verdadera y se terminará la
+                                 * ejecución del código dentro del Do-While
+                                             */
+                        //Se asigna falso a la bandera, pues hemos hecho un
+                        //intercambio
                         organizada = false;
                     }
                 }
                 else {
                     /*
-                     * Si la columna siguiente es inexistente, entonces comparamos los valores
-                     * de la posición actual con el de la siguiente fila, primera columna, si
-                     * esta existe.
+                    * Si la columna siguiente es inexistente, entonces
+                    * comparamos los valores de la posición actual con el de la
+                    * siguiente fila, primera columna, si esta existe.
                      */
                     if(i + 1 < filas && m[i + 1][0] > m[i][j]) {
                         aux = m[i + 1][0];
@@ -92,9 +97,10 @@ int main() {
             }
         }
         /*
-        * Termina Hacer-Mientras: El código se ejecuta mientras la bandera sea falsa,
-        * es decir, mientras se ha hecho al menos un intercambio de posiciones de los valores.
-        */
+        * Termina Hacer-Mientras: El código se ejecuta mientras la bandera sea
+        * falsa, es decir, mientras se ha hecho al menos un intercambio de
+        * posiciones de los valores.
+               */
     }
     while(organizada == false);
 
