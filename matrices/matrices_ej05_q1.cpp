@@ -92,7 +92,7 @@ int main() {
             }
         }
         /*
-        * Termina Hacer-Mientras: El código se ejecuta mientras la organizadaera sea falsa,
+        * Termina Hacer-Mientras: El código se ejecuta mientras la bandera sea falsa,
         * es decir, mientras se ha hecho al menos un intercambio de posiciones de los valores.
         */
     }
