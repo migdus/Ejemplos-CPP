@@ -5,8 +5,8 @@
 /*
  * Escriba un programa que capture el número de filas y columnas, cree una
  * matriz y asigne los valores de falso y verdadero de forma intercalada,
- * empezando por la posición n-1,m-1, hacia la izquierda, donde n y m son el número
- * de filas y de columnas, respectivamente.
+ * empezando por la posición n-1,m-1, hacia la izquierda, donde n y m son el
+ * número de filas y de columnas, respectivamente.
  */
 
 #include <iostream>
@@ -20,13 +20,15 @@ int main() {
     int columnas;
 
     /*
-     * Dirección en el que se llena la matriz: si es verdadero, la matriz se llena
-     * de izquierda a derecha. Si es falso, se llena de derecha a izquierda.
+     * Dirección en el que se llena la matriz: si es verdadero, la matriz se
+     * llena de izquierda a derecha. Si es falso, se llena de derecha a
+     * izquierda.
      */
 
     bool direccion = false;
 
-    bool valor = false; //Valor con el que se llena una posición de la matriz
+    //Valor con el que se llena una posición de la matriz
+    bool valor = false;
 
     //Captura de dimensiones de la matriz
 
@@ -86,8 +88,8 @@ int main() {
     while(fila_actual >= 0);
 
     //Mostrar la matriz
-    cout << endl << endl << "Matriz Resultado: 1(true); 0(false)" << setw(
-             5) << endl;
+    cout << endl << endl << "Matriz Resultado: 1(true); 0(false)";
+    cout << setw( 5) << endl;
     for(int i = 0; i < filas; i++) {
         for(int j = 0; j < columnas; j++)
             cout << m[i][j] << setw(5);
