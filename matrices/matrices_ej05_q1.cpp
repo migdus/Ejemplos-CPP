@@ -17,7 +17,7 @@ int main()
 	int columnas = 0;
 	int aux = 0; //Variable auxiliar, utilizada para hacer intercambios
 
-//Captura de filas y columnas
+	//Captura de filas y columnas
 	cout << "Número de filas?";
 	cin >> filas;
 
@@ -41,17 +41,15 @@ int main()
 			cout << m[i][j] << setw(5);
 		cout << endl;
 	}
-
-
 	
 	/*
-	 * La variable band se utiliza para saber si los datos se encuentran
+	 * La variable organizada se utiliza para saber si los datos se encuentran
 	 * organizados de forma descentente en la matriz
 	 */
-	bool band;
+	bool organizada;
 	do //Empieza Hacer Mientras
 	{
-		band = true;
+		organizada = true; //De entrada se asume que la matriz está organizada
 		for(int i = 0; i < filas; i++)
 		{
 			for(int j = 0; j < columnas; j++)
@@ -75,7 +73,13 @@ int main()
 						aux = m[i][j + 1];
 						m[i][j + 1] = m[i][j];
 						m[i][j] = aux;
-						band = false; //Se asigna falso a la bandera, pues hemos hecho un intercambio
+						/*
+						 * En caso de realizarse al menos un intercambio de valores en la matriz,
+						 * se debe asignar el valor de falso a la organizadaera. Así, cuando se recorra
+						 * toda la matriz y no se requieran cambios de posiciones, la organizadaera seguirá
+						 * siendo verdadera y se terminará la ejecución del código dentro del Do-While
+						 */
+						organizada = false; //Se asigna falso a la organizadaera, pues hemos hecho un intercambio
 					}
 				}
 				else
@@ -90,17 +94,17 @@ int main()
 						aux = m[i + 1][0];
 						m[i + 1][0] = m[i][j];
 						m[i][j] = aux;
-						band = false;
+						organizada = false;
 					}
 				}
 			}
 		}
 		/*
-		* Termina Hacer-Mientras: El código se ejecuta mientras la bandera sea falsa,
+		* Termina Hacer-Mientras: El código se ejecuta mientras la organizadaera sea falsa,
 		* es decir, mientras se ha hecho al menos un intercambio de posiciones de los valores.
 		*/
 	}
-	while(band == false);
+	while(organizada == false);
 	
 	//Mostrar la matriz organizada
 	cout << endl << endl << "Matriz organizada" << setw(5) << endl;
@@ -112,8 +116,5 @@ int main()
 	}
 
 	cin.get();
-
-
-
 	return 0;
 }
